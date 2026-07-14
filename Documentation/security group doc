@@ -1,0 +1,8 @@
+Domain Name; NMG.com
+OUs created;finance,IT,HR,Operations
+Security groups created; Finance-users, HR-users, IT-users, Operation-users
+Purpose of each OU;
+-Finanace; Responsible for managing the company's financial resource, including budgeting, accounting, financial resporting, auditing, and tracking revenue and expenses.
+-HR, focuses on managing employee lifecycle and well-being,payroll administration,. benefits and employee relations.
+-IT manages and maintains the organization's technical infrastructure,network security,hardware and software systems, and provides technical support to employee.
+-Operations; oversees the day-to day core businesss activities and processes required to efficiently produce and deliver the company's products or services.
