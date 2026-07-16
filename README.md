@@ -1,5 +1,4 @@
-# Active Directory Identity & Access
-Troubleshooting Lab
+# Active Directory Identity & Access Troubleshooting Lab
 A home-lab project in a simulated 200-user healthcare Active Directory
 environment. I built the environment and resolved a realistic identity/access incident
 (Ticket NMG-0047) end-to-end — from diagnosis through resolution, verification, and
