@@ -52,36 +52,17 @@ PowerShell (planned next step) — New-ADUser script to automate consistent
 provisioning
 
 ## Project Timeline
-Stage What I did
-1. Build Stood up a simulated 200-user healthcare AD environment (OUs, users,
+| Stage | What I did |
+|---|---|
+| **1. Build** | Stood up a simulated 200-user healthcare AD environment (OUs, users, security groups, GPOs) |
+| **2. Intake** | Received Ticket NMG-0047 and documented the reported symptoms without jumping to conclusions |
+| **3. Investigate** | Compared the affected account against a known-good teammate to isolate differences |
+| **4. Root cause** | Identified two issues via Five Whys analysis: wrong OU and missing security group |
+| **5. Resolve** | Applied one fix per root cause (OU move, group add, erroneous group removal) |
+| **6. Verify** | Confirmed both symptoms cleared after gpupdate /force and re-login |
+| **7. Document** | Wrote up the incident and recommended prevention measures |
 
-security groups, GPOs)
 
-2. Intake Received Ticket NMG-0047 and documented the reported symptoms
-
-without jumping to conclusions
-
-3.
-Investigate
-
-Compared the affected account against a known-good teammate to
-isolate differences
-
-4. Root
-cause
-
-Identified two issues via Five Whys analysis: wrong OU and missing
-security group
-
-5. Resolve Applied one fix per root cause (OU move, group add, erroneous group
-
-removal)
-
-6. Verify Confirmed both symptoms cleared after gpupdate /force and re-login
-7.
-Document Wrote up the incident and recommended prevention measures
-
-Total resolution time: ~40 minutes.
 
 ## Key Accomplishments
 Diagnosed and resolved a realistic AD access incident end-to-end in ~40 minutes.
