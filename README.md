@@ -1,11 +1,11 @@
-Active Directory Identity & Access
+# Active Directory Identity & Access
 Troubleshooting Lab
 A home-lab project in a simulated 200-user healthcare Active Directory
 environment. I built the environment and resolved a realistic identity/access incident
 (Ticket NMG-0047) end-to-end — from diagnosis through resolution, verification, and
 prevention.
 
-1. Problem Statement
+## Problem Statement
 A newly onboarded Operations Coordinator (Jane Cooper) could log in successfully but
 received Access Denied on all Operations shared resources. Her desktop environment
 — group policies, mapped drives, and restrictions — also behaved differently from the
@@ -14,7 +14,7 @@ persisted after multiple restarts.
 Left unresolved, this blocked a new hire from working during her first week and pointed
 to a possible gap in the account-provisioning process.
 
-2. Solutions Overview
+## Solutions Overview
 I resolved the issue by comparing the affected account against a known-good teammate
 (Carlos Rivera) to isolate exactly what was different — investigating fully before making
 any change.
@@ -39,7 +39,7 @@ Key lesson: The obvious symptom (Access Denied) hid a second root cause
 (OU/GPO). Fixing only the visible one would have left the ticket half-resolved — so I
 always verify the full fix, not just the first thing I find.
 
-3. Tools Used
+## Tools Used
 Active Directory Domain Services (AD DS) — Windows Server domain controller
 hosting the simulated environment
 Active Directory Users and Computers (ADUC) — inspecting/adjusting OU
@@ -52,7 +52,7 @@ Virtualization (VMware / VirtualBox / Hyper-V) — hosting the lab environment
 PowerShell (planned next step) — New-ADUser script to automate consistent
 provisioning
 
-4. Project Timeline
+## Project Timeline
 Stage What I did
 1. Build Stood up a simulated 200-user healthcare AD environment (OUs, users,
 
@@ -84,7 +84,7 @@ Document Wrote up the incident and recommended prevention measures
 
 Total resolution time: ~40 minutes.
 
-5. Key Accomplishments
+## Key Accomplishments
 Diagnosed and resolved a realistic AD access incident end-to-end in ~40 minutes.
 Identified two distinct root causes where a less thorough approach would have
 caught only one — using a known-good baseline comparison instead of guessing.
